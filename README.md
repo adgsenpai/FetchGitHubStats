@@ -9,15 +9,15 @@
 
 in bash
 
-'''
+```
 pip install FetchGitHubStats
-'''
+```
 
 #### Coding usage
 
-'''
+```
 from FetchGitHubStats import dataframe
 
 # Make sure to use your GitHub API URL
 dataframe.ReturnDataFrame('https://api.github.com/users/ADGVLOGS/repos')
-'''
+```

@@ -13,6 +13,11 @@ in bash
 pip install FetchGitHubStats
 ```
 
+# Real Life Use Case
+
+https://adgstudios.co.za/projects
+
+
 #### Coding usage
 
 ```

@@ -12,7 +12,6 @@ class GitHubRepoMetadata:
           forks = []
           description = []
           language = []
-          avatar_url = []
           for item in data:
             for key, value in item.items():
               if key == 'html_url':
@@ -27,8 +26,6 @@ class GitHubRepoMetadata:
                   language.append(value)
               if key == 'description':
                   description.append(value)
-              if key == 'avatar_url':
-                  avatar_url.append(value)
 
           df = pd.DataFrame(list(zip(name,description,language,stars,forks,urls)),columns =['Name Of Project', 'Description','Language','Stars','Forks','Link to Repo'])
           df = df.sort_values(by='Stars',ascending=False)
